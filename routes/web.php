@@ -15,7 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    $data = [
+    $paste = [
         [
             "src" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-m.jpg",
             "src-h" => "https://www.lamolisana.it/wp-content/uploads/2017/06/4-spaghetto-quadrato-bucato-h.jpg",
@@ -139,25 +139,29 @@ Route::get('/', function () {
     ];
     
     $pages = [
-        'pages' =>[
             'home',
             'prodotti',
             'news'
-        ]
     ];
-    $paste = [];
+  
     $types = [];
 
 
-  foreach ($data as $pasta) {
+  foreach ($paste as $pasta) {
 
     if( !in_array($pasta['tipo'],$types) ){
         $types[] = $pasta['tipo'];
     }
   }
 
-
-    return view('home',$pages);
+  $data= [
+        'types'=>$types,
+        'paste' => $paste,
+        'pages' => $pages
+  ];
+    return view('home',[
+        'data'=>$data
+        ]);
 });
 
 

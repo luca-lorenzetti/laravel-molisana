@@ -1,5 +1,15 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   font-family: "Open Sans", sans-serif;
+}
+body h2 {
+  text-transform: uppercase;
+  color: #020258;
+  margin: 5px;
 }
 body ul {
   list-style: none;
@@ -19,7 +29,29 @@ body header {
   width: 100%;
   text-align: center;
 }
+body main {
+  padding: 50px;
+  background-image: url("../images/fondo-pag-speciali.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+body main .card {
+  width: 470px;
+  margin: 5px;
+}
+body main .card > img {
+  width: 100%;
+}
 body .container {
   width: 80%;
   margin: 0 auto;
+}
+
+.flex {
+  display: flex;
+}
+
+.wrap {
+  flex-wrap: wrap;
 }

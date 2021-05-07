@@ -13,22 +13,24 @@
 </head>
 <body>
     <header>
+     
         <div class="container">
             <div class="logo">
                 <img src="{{asset('images/marchio-sito-test.png')}}" alt="logo-site">
             </div>
 
             <nav>
+       
                 <ul>
-                    @foreach ($pages as $page)
+                    @foreach ($data['pages'] as $page)
+               
                         @if ($loop->first)
                             <li><a href="/">{{$page}}</a></li>
                         @else
                              <li><a href="{{$page}}">{{$page}}</a></li>
                         @endif                        
                     @endforeach
-                    
-                    @include('parts.footer')
+
                 </ul>
             </nav>
         </div>
