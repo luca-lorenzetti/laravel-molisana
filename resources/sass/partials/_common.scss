@@ -1,0 +1,31 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+    ul{
+        list-style: none;
+        
+        
+        li{
+            display: inline-block;
+            text-transform: capitalize;
+            margin: 10px;
+
+            a{
+                text-decoration: none;
+                font-weight: bold;
+                color: $textColorSec;
+            }
+        }
+    }
+
+    header{
+        padding: 50px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .container{
+        width: $width-container;
+        margin: 0 auto;
+    }
+}
+
