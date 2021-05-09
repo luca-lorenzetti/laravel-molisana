@@ -32,9 +32,11 @@ body ul > li > a.active {
   background-color: #B2E5FC;
 }
 body header {
-  padding-top: 50;
   width: 100%;
   text-align: center;
+}
+body header img {
+  margin: 50px 0;
 }
 body .container {
   width: 80%;
@@ -71,6 +73,7 @@ main.home .card > img {
 
 .menu {
   display: none;
+  margin-bottom: 20px;
 }
 .menu a {
   color: #020258;
@@ -117,7 +120,7 @@ main.prodotti a i {
 main.prodotti p {
   color: #020258;
   font-weight: 600;
-  padding: 40px;
+  padding: 100px;
 }
 main.prodotti .top_content {
   height: 20vw;
@@ -127,7 +130,7 @@ main.prodotti .top_content {
   background-repeat: no-repeat;
 }
 main.prodotti .mid_content {
-  height: 30vw;
+  height: 20vw;
   width: 100%;
   background-position: center center;
   background-size: contain;
@@ -135,7 +138,6 @@ main.prodotti .mid_content {
 }
 main.prodotti .left_content, main.prodotti .right_content {
   width: 10%;
-  height: 100;
   align-items: center;
 }
 main.prodotti .right_content {

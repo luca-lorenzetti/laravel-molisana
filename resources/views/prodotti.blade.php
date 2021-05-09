@@ -12,8 +12,9 @@
     </div>
 
     <div class="center_content">
+        <h2>{{$data['paste'][$prodIndex]['titolo']}}</h2>
         <div class="top_content" style="background-image: url({{$data['paste'][$prodIndex]['src-h']}}) ">
-            <h2>{{$data['paste'][$prodIndex]['titolo']}}</h2>
+           
          </div>
          <div class="mid_content" style="background-image: url({{$data['paste'][$prodIndex]['src-p']}}) ">
           </div>

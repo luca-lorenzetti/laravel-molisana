@@ -1,6 +1,7 @@
 main.prodotti{
     background-color: #B6DBE4;
     justify-content: center;
+    
 
     h2{
         text-align: center;
@@ -20,7 +21,7 @@ main.prodotti{
     p{
         color: rgb(2, 2, 88);
         font-weight: 600;
-        padding: 40px;
+        padding: 100px;
     }
     .top_content{
         height: 20vw;
@@ -31,7 +32,7 @@ main.prodotti{
     }
 
     .mid_content{
-        height: 30vw;
+        height: 20vw;
         width: 100%;
         background-position: center center;
         background-size: contain;
@@ -40,7 +41,6 @@ main.prodotti{
 
     .left_content,.right_content{
         width: 10%;
-        height: 100;
         align-items: center;
     }
     .right_content{
