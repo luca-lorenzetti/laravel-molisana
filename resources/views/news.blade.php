@@ -1,2 +1,4 @@
 @include('parts.header')
 
+@include('parts.footer')
+

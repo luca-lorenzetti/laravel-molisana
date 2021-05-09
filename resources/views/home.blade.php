@@ -1,6 +1,6 @@
 @include('parts.header')
 
-<main>
+<main class="home">
     <div class="container">
 
         @foreach ($data['types'] as $type)

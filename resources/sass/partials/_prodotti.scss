@@ -1,0 +1,50 @@
+main.prodotti{
+    background-color: #B6DBE4;
+    justify-content: center;
+
+    h2{
+        text-align: center;
+        margin-top: 50px;
+    }
+
+    a{
+        color: #fff;
+
+        i{
+            font-size: 60px;
+            background-color: #DCEDF2;
+            padding: 5px;
+        }
+    }
+
+    p{
+        color: rgb(2, 2, 88);
+        font-weight: 600;
+        padding: 40px;
+    }
+    .top_content{
+        height: 20vw;
+        width: 100%;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .mid_content{
+        height: 30vw;
+        width: 100%;
+        background-position: center center;
+        background-size: contain;
+        background-repeat: no-repeat;
+    }
+
+    .left_content,.right_content{
+        width: 10%;
+        height: 100;
+        align-items: center;
+    }
+    .right_content{
+        display: flex;
+        justify-content: flex-end;
+    }
+}

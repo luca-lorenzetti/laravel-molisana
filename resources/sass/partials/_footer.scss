@@ -1,0 +1,54 @@
+footer{
+        color: $testColorPrim;
+
+    .left{
+        margin-top: 50px;
+        margin-left: 50px;
+        flex-basis: 1;   
+        flex: 1;
+    }
+    .right{
+        flex-basis: 2;   
+        flex: 2;
+        margin: 50px;
+        justify-content: space-between;
+    
+        h3 {
+            text-transform: uppercase;
+            margin-bottom: 10px;
+           
+        }
+        .footer_list{
+            flex-basis: calc(100%/2);
+            ul{
+                flex-direction: column;
+                margin-bottom: 20px;
+               li{
+                margin: 5px 0;
+    
+                    a{
+                        color: $testColorPrim;
+                    }
+                }
+        
+            }
+        }
+    }
+}
+
+@media only screen and(max-width: 1280px) {    
+ 
+ .container{
+     flex-direction: column;
+
+     .right{
+         flex-direction: column;
+     }
+ }
+ 
+}
+@media only screen and(max-width: 720px) {    
+
+
+    
+}
