@@ -19,9 +19,9 @@
          <div class="mid_content" style="background-image: url({{$data['paste'][$prodIndex]['src-p']}}) ">
           </div>
           <div class="bottom_content">
-              <p>
-                 {!! $data['paste'][$prodIndex]['descrizione'] !!}
-              </p>
+           
+                 {!!  htmlspecialchars_decode($data['paste'][$prodIndex]['descrizione']) !!}
+            
           </div>
     </div>
     <div class="right_content flex">

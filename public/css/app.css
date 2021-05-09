@@ -108,6 +108,7 @@ main.prodotti {
 main.prodotti h2 {
   text-align: center;
   margin-top: 50px;
+  margin-bottom: 100px;
 }
 main.prodotti a {
   color: #fff;
@@ -117,20 +118,15 @@ main.prodotti a i {
   background-color: #DCEDF2;
   padding: 5px;
 }
-main.prodotti p {
-  color: #020258;
-  font-weight: 600;
-  padding: 100px;
-}
 main.prodotti .top_content {
-  height: 20vw;
+  height: 10vw;
   width: 100%;
   background-position: center center;
   background-size: contain;
   background-repeat: no-repeat;
 }
 main.prodotti .mid_content {
-  height: 20vw;
+  height: 25vw;
   width: 100%;
   background-position: center center;
   background-size: contain;
@@ -143,6 +139,11 @@ main.prodotti .left_content, main.prodotti .right_content {
 main.prodotti .right_content {
   display: flex;
   justify-content: flex-end;
+}
+main.prodotti .bottom_content {
+  color: #020258;
+  font-weight: 600;
+  padding: 100px;
 }
 
 footer {

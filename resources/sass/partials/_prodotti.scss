@@ -6,6 +6,8 @@ main.prodotti{
     h2{
         text-align: center;
         margin-top: 50px;
+        margin-bottom: 100px;
+
     }
 
     a{
@@ -18,13 +20,8 @@ main.prodotti{
         }
     }
 
-    p{
-        color: rgb(2, 2, 88);
-        font-weight: 600;
-        padding: 100px;
-    }
     .top_content{
-        height: 20vw;
+        height: 10vw;
         width: 100%;
         background-position: center center;
         background-size: contain;
@@ -32,7 +29,7 @@ main.prodotti{
     }
 
     .mid_content{
-        height: 20vw;
+        height: 25vw;
         width: 100%;
         background-position: center center;
         background-size: contain;
@@ -46,5 +43,11 @@ main.prodotti{
     .right_content{
         display: flex;
         justify-content: flex-end;
+    }
+
+    .bottom_content{
+        color: rgb(2, 2, 88);
+        font-weight: 600;
+        padding: 100px;
     }
 }
