@@ -15,5 +15,25 @@
                > img{
                     width: 100%;
                 }
+
+
+                @media only screen and(max-width: 1280px) {    
+
+                    flex-basis: calc(calc(100%/2) - 10px);
+     
+                }
+
+                @media only screen and(max-width: 720px) {    
+        
+                    flex-basis: calc(100% - 10px);
+                 }
+
             }
+
+
+        
+          
+            
+
+
     }

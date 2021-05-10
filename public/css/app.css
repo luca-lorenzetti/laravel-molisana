@@ -70,6 +70,16 @@ main.home .card {
 main.home .card > img {
   width: 100%;
 }
+@media only screen and (max-width: 1280px) {
+  main.home .card {
+    flex-basis: calc(calc(100%/2) - 10px);
+  }
+}
+@media only screen and (max-width: 720px) {
+  main.home .card {
+    flex-basis: calc(100% - 10px);
+  }
+}
 
 .menu {
   display: none;
@@ -146,49 +156,51 @@ main.prodotti .bottom_content {
   padding: 100px;
 }
 
-footer {
+footer .container {
   color: grey;
   background-image: url("../images/footer-montagne-bottom.jpg");
   background-position: center 100%;
   background-size: contain;
   background-repeat: no-repeat;
 }
-footer .left {
+@media only screen and (max-width: 1280px) {
+  footer .container {
+    flex-direction: column;
+  }
+}
+footer .container .left {
   margin-top: 50px;
   margin-left: 50px;
   flex-basis: 1;
   flex: 1;
 }
-footer .right {
+footer .container .right {
   padding-bottom: 100px;
   flex-basis: 2;
   flex: 2;
   margin: 50px;
   justify-content: space-between;
 }
-footer .right h3 {
+footer .container .right h3 {
   text-transform: uppercase;
-  margin-bottom: 10px;
+  margin-top: 10px;
 }
-footer .right .footer_list {
+footer .container .right .footer_list {
   flex-basis: calc(100%/2);
 }
-footer .right .footer_list ul {
+footer .container .right .footer_list ul {
   flex-direction: column;
   margin-bottom: 20px;
 }
-footer .right .footer_list ul li {
+footer .container .right .footer_list ul li {
   margin: 5px 0;
 }
-footer .right .footer_list ul li a {
+footer .container .right .footer_list ul li a {
   color: grey;
+  padding: 0;
 }
-
 @media only screen and (max-width: 1280px) {
-  .container {
-    flex-direction: column;
-  }
-  .container .right {
+  footer .container .right {
     flex-direction: column;
   }
 }
