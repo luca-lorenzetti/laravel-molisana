@@ -1,4 +1,6 @@
-@include('parts.header')
+@extends('layouts.main')
 
-@include('parts.footer')
+@section('content')
 
+
+@endsection

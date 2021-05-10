@@ -1,5 +1,7 @@
-@include('parts.header')
+@extends('layouts.main')
 
+@section('content')
+    
 <main class="home">
     <div class="container">
 
@@ -10,11 +12,13 @@
                 </div>
             
                 <div class="cards flex wrap">
-                    @foreach ($data['paste'] as $pasta)
+                    @foreach ($data['paste'] as $index => $pasta)
                     @if ($pasta['tipo'] == $type)
-                        <div class="card">
+
+                        <a href="{{route('prodotti',$index)}}" class="card">
                             <img src="{{asset($pasta['src'])}}" alt="{{$pasta['titolo']}}">
-                        </div>
+                        </a>
+
                     @endif
                 @endforeach
                 </div>
@@ -23,6 +27,5 @@
         @endforeach
     </div>
 </main>
+@endsection
 
-
-@include('parts.footer')

@@ -1,4 +1,6 @@
-@include('parts.header')
+@extends('layouts.main')
+
+@section('content')
 
 
 @php 
@@ -29,5 +31,5 @@
     </div>
 </main>
 
-@include('parts.footer')
+@endsection
 

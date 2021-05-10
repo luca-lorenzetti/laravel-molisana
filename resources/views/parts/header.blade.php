@@ -25,16 +25,10 @@
             </div>
             <nav>
                 <ul>
-                    @foreach ($data['pages'] as $page)
-             
-                        @if ($loop->first)
-                        
-              
-                            <li ><a href="/" class="{{ Request::path() ==  '/' ? 'active' : ''  }} flex">{{$page}}</a></li>
-                        @else
-                             <li ><a href="{{$page}}" class="{{ Request::path() ==  $page ? 'active' : ''  }} flex" >{{$page}}</a></li>
-                        @endif                        
-                    @endforeach
+                    <li><a href={{route('home')}} class="{{ Route::getCurrentRoute()->getName() ==  "home" ? 'active' : ''  }} flex">Home</a></li>
+                    <li><a href={{route('prodotti',0)}} class="{{ Route::getCurrentRoute()->getName() ==  str_replace("http://localhost:8000/", "", route('prodotti',0)) ? 'active' : ''  }} flex">Prodotti</a></li>
+                    <li><a href={{route('news')}} class="{{Route::getCurrentRoute()->getName() ==  str_replace("http://localhost:8000/", "", route('news')) ? 'active' : ''  }} flex">News</a></li> 
+        
 
                 </ul>
             </nav>
