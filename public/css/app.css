@@ -148,6 +148,10 @@ main.prodotti .bottom_content {
 
 footer {
   color: grey;
+  background-image: url("../images/footer-montagne-bottom.jpg");
+  background-position: center 100%;
+  background-size: contain;
+  background-repeat: no-repeat;
 }
 footer .left {
   margin-top: 50px;
@@ -156,6 +160,7 @@ footer .left {
   flex: 1;
 }
 footer .right {
+  padding-bottom: 100px;
   flex-basis: 2;
   flex: 2;
   margin: 50px;

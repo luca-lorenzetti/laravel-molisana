@@ -1,13 +1,18 @@
 footer{
         color: $testColorPrim;
-
+        background-image: url('../images/footer-montagne-bottom.jpg');
+        background-position: center 100%;
+        background-size: contain;
+        background-repeat: no-repeat;
     .left{
         margin-top: 50px;
         margin-left: 50px;
         flex-basis: 1;   
         flex: 1;
+
     }
     .right{
+        padding-bottom: 100px;
         flex-basis: 2;   
         flex: 2;
         margin: 50px;
