@@ -42,7 +42,7 @@ Route::get('/', function () {
     }
   }
 
-  $data= [
+  $data = [
         'types'=>$types,
         'paste' => $paste,
         'pages' => $pages,
@@ -83,8 +83,18 @@ Route::get('prodotti/{index}', function ($index) {
     }
   }
 
+
+  if($index >= count($paste))
+  {
+    abort(404);
+  }
+
+  $pasta = $paste[$index];
+  $pasta['id'] = $index;
+
   $data= [
         'types'=>$types,
+        'pasta' => $pasta,
         'paste' => $paste,
         'pages' => $pages,
         'contacts' => $contacts,
